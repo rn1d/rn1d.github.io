@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Restart"
+date:   2012-05-26 02:10:00
+categories: meta
+---
+This blog has been restarted. Let's see how it goes.
