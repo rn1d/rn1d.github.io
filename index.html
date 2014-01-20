@@ -1,13 +1,163 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Hello!
 ---
 
+<div id="main-container">
+
+    <div id="content" class="row">
+        <!-- printf("hello, world!\n"); -->
+        <!-- todo: get the style info out -->
+        <article class="col-md-12">
+            <style type="text/css" scoped="scoped"><!--
+                #greetings span {
+                    font-size: 58px;
+                    font-family: 'Source Code Pro', Helvetica, Tahoma;
+                }
+
+                #greetings .code {
+                    color: #808080;
+                    transition-property: color,background-color;
+                    transition-duration: 0.5s;
+                }
+
+                #greetings .code:hover{
+                    color: #000000;
+                    background-color: #e2e6d6;
+                }
+
+                #greetings .codeliteral {
+                    color: #dab2b2;
+                    transition-property: color;
+                    transition-duration: 0.5s;
+                }
+
+                #greetings .codeliteral:hover {
+                    color: #A31515;
+                    transition-property: color;
+                    transition-duration: 0.5s;
+                }
+
+                #greetings .specialchars {
+                    color: #d8a4a4;
+                    transition-property: color;
+                    transition-duration: 0.5s;
+                }
+
+                #greetings .specialchars:hover{
+                    color: #b24c4c;
+                }
+            -->
+            </style>
+            <div id="greetings">
+                <span class="code">printf<span class="code">(<span class="codeliteral">"hello, world<span class="specialchars">\n</span>"</span>)</span>;</span>
+            </div>
+        </article>
+    </div>
+
+    <div id="after-content" class="row">
+        <article class="col-md-12">
+            <!-- style="margin-left: -1px; overflow-y: auto;" -->
+            <div class="accentContainer">
+                <img class="pull-left" width="96" height="96" alt="Ronald Zarits" src="assets/img/zarits_face.jpg" />
+                <p class="col-md-10">
+                    &gt;_ I'm Ronald Zarīts, a software developer, design enthusiast and aspiring drummer. `<br />
+                    I live in Riga, Latvia and work at Scope Technologies. Processing Infinity is my internet home.
+                </p>
+            </div>
+        </article>
+    </div>
+
+</div>
+
+<div id="tripel-container" class="row">
+    <div id="layout-tripel">
+
+        <div id="tripel-first" class="col-md-4">
+            <div>
+                <article>
+                    <header>
+                        <h1>Also, find me on</h1>
+                    </header>
+                    <ul>
+                        <li><a href="http://www.linkedin.com/pub/ronalds-zarīts/19/a9/98b">LinkedIn</a></li>
+                        <li><a href="http://stackoverflow.com/users/88522/ronald-zarts">StackOverflow</a></li>
+                        <li><a href="http://serverfault.com/users/128293/ronald-zarts">ServerFault</a></li>
+                        <li><a href="https://www.codeplex.com/site/users/view/rona1ds">Codeplex</a></li>
+                        <li><a href="https://twitter.com/rn1d">Twitter</a></li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+
+        <div id="tripel-second" class="col-md-4">
+            <div>
+                <article>
+                    <header>
+                        <h1>Recent Posts</h1>
+                    </header>
+
+      
+
+                    <ul class="posts">
+                        {% for post in site.posts %}
+                            <li>
+                            <a href="{{ post.url }}">{{ post.title }}</a>
+                            <span class="metadata">{{ post.date | date_to_string }}</span>
+                            </li>
+                        {% endfor %}
+
+                        <li>
+                            <span><a href="/making-beatkeeper">Making BeatKeeper - a Modern Metronome for the Digital Era</a></span>
+                            <div><span class="metadata">Wednesday, January 08, 2014</span></div>
+                        </li>
+                        <li>
+                            <div><span><a href="/blog/thoughts-on-sketching-user-experiences-by-bill-buxton">Thoughts on Sketching User Experiences by Bill Buxton</a></span></div>
+                            <div><span class="metadata">Saturday, June 15, 2013</span></div>
+                        </li>
+                        <li>
+                            <div><span><a href="/blog/reduce-windows-8-desktop-window-border-thickness">Reduce Windows 8 Desktop Window Border Thickness</a></span></div>
+                            <div><span class="metadata">Saturday, June 15, 2013</span></div>
+                        </li>
+                        <li>
+                            <div><span><a href="/blog/sublime-text---my-new-plain-text-editor-of-choice">Sublime Text - My New Plain Text Editor of Choice</a></span></div>
+                            <div><span class="metadata">Saturday, June 15, 2013</span></div>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+
+        <div id="tripel-third" class="col-md-4">
+            <div>
+                <article>
+                    <header>
+                        <h1>Recent Tweets</h1>
+                    </header>
+                    <p>
+                        <a class="twitter-timeline" data-chrome="noheader" data-dnt="true" href="https://twitter.com/rn1d" data-widget-id="409747760510816257">Tweets by @rn1d</a>
+                    </p>
+                    <script type="text/javascript">
+                        // <![CDATA[
+                        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                        // ]]>
+                    </script>
+                    <p style="text-align: right;">
+                        <a href="https://twitter.com/rn1d" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @rn1d</a>
+                    </p>
+                    <script type="text/javascript">
+                        // <![CDATA[
+                        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                        // ]]>
+                    </script>
+                </article>
+            </div>
+        </div>
+
+    </div>
+</div>
+
 <div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+
+
 </div>
