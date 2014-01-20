@@ -96,9 +96,6 @@ title: Hello!
                     <header>
                         <h1>Recent Posts</h1>
                     </header>
-
-      
-
                     <ul class="posts">
                         {% for post in site.posts %}
                             <li>
@@ -106,23 +103,6 @@ title: Hello!
                             <span class="metadata">{{ post.date | date_to_string }}</span>
                             </li>
                         {% endfor %}
-
-                        <li>
-                            <span><a href="/making-beatkeeper">Making BeatKeeper - a Modern Metronome for the Digital Era</a></span>
-                            <div><span class="metadata">Wednesday, January 08, 2014</span></div>
-                        </li>
-                        <li>
-                            <div><span><a href="/blog/thoughts-on-sketching-user-experiences-by-bill-buxton">Thoughts on Sketching User Experiences by Bill Buxton</a></span></div>
-                            <div><span class="metadata">Saturday, June 15, 2013</span></div>
-                        </li>
-                        <li>
-                            <div><span><a href="/blog/reduce-windows-8-desktop-window-border-thickness">Reduce Windows 8 Desktop Window Border Thickness</a></span></div>
-                            <div><span class="metadata">Saturday, June 15, 2013</span></div>
-                        </li>
-                        <li>
-                            <div><span><a href="/blog/sublime-text---my-new-plain-text-editor-of-choice">Sublime Text - My New Plain Text Editor of Choice</a></span></div>
-                            <div><span class="metadata">Saturday, June 15, 2013</span></div>
-                        </li>
                     </ul>
                 </article>
             </div>
