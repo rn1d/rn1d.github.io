@@ -3,4 +3,4 @@ markdown: redcarpet
 pygments: true
 timezone: Europe/Riga
 encoding: UTF-8
-permalink: pretty
+permalink: /weblog/:year/:month/:day/:title
