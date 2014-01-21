@@ -2,72 +2,67 @@
 layout: default
 title: Hello!
 ---
+<div id="greeting" class="row">
+    <!-- printf("hello, world!\n"); -->
+    <!-- todo: get the style info out -->
+    <article class="col-md-12">
+        <style type="text/css" scoped="scoped"><!--
+            #greetings span {
+                font-size: 58px;
+                font-family: 'Source Code Pro', Helvetica, Tahoma;
+            }
 
-<div id="main-container">
+            #greetings .code {
+                color: #808080;
+                transition-property: color,background-color;
+                transition-duration: 0.5s;
+            }
 
-    <div id="content" class="row">
-        <!-- printf("hello, world!\n"); -->
-        <!-- todo: get the style info out -->
-        <article class="col-md-12">
-            <style type="text/css" scoped="scoped"><!--
-                #greetings span {
-                    font-size: 58px;
-                    font-family: 'Source Code Pro', Helvetica, Tahoma;
-                }
+            #greetings .code:hover{
+                color: #000000;
+                background-color: #e2e6d6;
+            }
 
-                #greetings .code {
-                    color: #808080;
-                    transition-property: color,background-color;
-                    transition-duration: 0.5s;
-                }
+            #greetings .codeliteral {
+                color: #dab2b2;
+                transition-property: color;
+                transition-duration: 0.5s;
+            }
 
-                #greetings .code:hover{
-                    color: #000000;
-                    background-color: #e2e6d6;
-                }
+            #greetings .codeliteral:hover {
+                color: #A31515;
+                transition-property: color;
+                transition-duration: 0.5s;
+            }
 
-                #greetings .codeliteral {
-                    color: #dab2b2;
-                    transition-property: color;
-                    transition-duration: 0.5s;
-                }
+            #greetings .specialchars {
+                color: #d8a4a4;
+                transition-property: color;
+                transition-duration: 0.5s;
+            }
 
-                #greetings .codeliteral:hover {
-                    color: #A31515;
-                    transition-property: color;
-                    transition-duration: 0.5s;
-                }
+            #greetings .specialchars:hover{
+                color: #b24c4c;
+            }
+        -->
+        </style>
+        <div id="greetings">
+            <span class="code">printf<span class="code">(<span class="codeliteral">"hello, world<span class="specialchars">\n</span>"</span>)</span>;</span>
+        </div>
+    </article>
+</div>
 
-                #greetings .specialchars {
-                    color: #d8a4a4;
-                    transition-property: color;
-                    transition-duration: 0.5s;
-                }
-
-                #greetings .specialchars:hover{
-                    color: #b24c4c;
-                }
-            -->
-            </style>
-            <div id="greetings">
-                <span class="code">printf<span class="code">(<span class="codeliteral">"hello, world<span class="specialchars">\n</span>"</span>)</span>;</span>
-            </div>
-        </article>
-    </div>
-
-    <div id="after-content" class="row">
-        <article class="col-md-12">
-            <!-- style="margin-left: -1px; overflow-y: auto;" -->
-            <div class="accentContainer">
-                <img class="pull-left" width="96" height="96" alt="Ronald Zarits" src="assets/img/zarits_face.jpg" />
-                <p class="col-md-10">
-                    &gt;_ I'm Ronald Zarīts, a software developer, design enthusiast and aspiring drummer. `<br />
-                    I live in Riga, Latvia and work at Scope Technologies. Processing Infinity is my internet home.
-                </p>
-            </div>
-        </article>
-    </div>
-
+<div id="introduction" class="row">
+    <article class="col-md-12">
+        <!-- style="margin-left: -1px; overflow-y: auto;" -->
+        <div class="accentContainer">
+            <img class="pull-left" width="96" height="96" alt="Ronald Zarits" src="assets/img/zarits_face.jpg" />
+            <p class="col-md-10">
+                &gt;_ I'm Ronald Zarīts, a software developer, design enthusiast and aspiring drummer. `<br />
+                I live in Riga, Latvia and work at Scope Technologies. Processing Infinity is my internet home.
+            </p>
+        </div>
+    </article>
 </div>
 
 <div id="tripel-container" class="row">
@@ -135,9 +130,4 @@ title: Hello!
         </div>
 
     </div>
-</div>
-
-<div id="home">
-
-
 </div>

@@ -1,0 +1,12 @@
+---
+layout: default
+title: Posts
+---
+<div class="content">
+{% for post in site.posts %}
+    <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <span class="metadata">{{ post.date | date_to_string }}</span>
+    </li>
+{% endfor %}
+</div>
