@@ -158,3 +158,42 @@ a:visited { color: #a0a; }
 .post pre.terminal code {
   background-color: #333;
 }
+
+/* ProcInf specific */
+#greetings span {
+    font-size: 58px;
+    font-family: 'Source Code Pro', Helvetica, Tahoma;
+}
+
+#greetings .code {
+    color: #808080;
+    transition-property: color,background-color;
+    transition-duration: 0.5s;
+}
+
+#greetings .code:hover{
+    color: #000000;
+    background-color: #e2e6d6;
+}
+
+#greetings .codeliteral {
+    color: #dab2b2;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+#greetings .codeliteral:hover {
+    color: #A31515;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+#greetings .specialchars {
+    color: #d8a4a4;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+#greetings .specialchars:hover{
+    color: #b24c4c;
+}
