@@ -19,32 +19,34 @@
   <div class="container">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default">
-        <div class="navbar-header">
-            <button class="btn btn-muted navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="glyphicon glyphicon-chevron-down"/>
-            </button>
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                {% assign pageUrl = page.url|remove:'index.html' %}
-                <li class="nav first {% if pageUrl == '/' %}active{% endif %}">
-                    <a href="/">{{ site.name }}</a> 
-                </li>
-                <li class="nav {% if pageUrl == '/weblog/' %}active{% endif %}">
-                    <a href="/weblog/">Weblog</a>
-                </li>
-                <li class="nav {% if pageUrl == '/about/' %}active{% endif %}" >
-                    <a href="/about/">About</a> 
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="btn btn-muted navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="glyphicon glyphicon-chevron-down"/>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    {% assign pageUrl = page.url|remove:'index.html' %}
+                    <li class="nav first {% if pageUrl == '/' %}active{% endif %}">
+                        <a href="/">{{ site.name }}</a> 
+                    </li>
+                    <li class="nav {% if pageUrl == '/weblog/' %}active{% endif %}">
+                        <a href="/weblog/">Weblog</a>
+                    </li>
+                    <li class="nav {% if pageUrl == '/about/' %}active{% endif %}" >
+                        <a href="/about/">About</a> 
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
 
-    {{ content }}
-    
-  </div>
-  <script type="text/javascript" src="//code.jquery.com/jquery-2.0.3.min.js"></script>
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+        {{ content }}
+        
+      </div>
+      <script type="text/javascript" src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+      <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>

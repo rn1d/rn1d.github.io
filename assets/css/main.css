@@ -4,7 +4,9 @@
 /*
 /*****************************************************************************/
 
-/* Global Reset */
+/* Global Reset 
+included in boostrap 
+
 * {
   margin: 0;
   padding: 0;
@@ -28,12 +30,19 @@ p { margin: 1em 0; }
 a         { color: #00a; }
 a:hover   { color: #000; }
 a:visited { color: #a0a; }
+*/
 
 /*****************************************************************************/
 /*
 /* Home
 /*
 /*****************************************************************************/
+
+body {
+  padding-top: 70px;
+}
+
+/*
 .posts {
   list-style-type: none;
   margin-bottom: 2em;
@@ -48,13 +57,14 @@ a:visited { color: #a0a; }
   font-family: Monaco, "Courier New", monospace;
   font-size: 80%;
 }
-
+*/
 /*****************************************************************************/
 /*
 /* Site
 /*
 /*****************************************************************************/
 
+/*
 .site {
   font-size: 115%;
   text-align: justify;
@@ -120,14 +130,16 @@ a:visited { color: #a0a; }
 .footer .rss img {
   border: 0;
 }
-
+*/
 /*****************************************************************************/
 /*
 /* Posts
 /*
 /*****************************************************************************/
 
-/* standard */
+/* standard 
+
+
 .post pre {
   border: 1px solid #ddd;
   background-color: #eef;
@@ -147,8 +159,9 @@ a:visited { color: #a0a; }
 .post pre code {
   border: none;
 }
+*/
 
-/* terminal */
+/* terminal 
 .post pre.terminal {
   border: 1px solid #000;
   background-color: #333;
@@ -158,6 +171,8 @@ a:visited { color: #a0a; }
 .post pre.terminal code {
   background-color: #333;
 }
+
+*/
 
 /* ProcInf specific */
 #greetings span {
