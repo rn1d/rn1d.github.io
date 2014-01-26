@@ -38,7 +38,7 @@ a:visited { color: #a0a; }
 /*
 /*****************************************************************************/
 
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Code+Pro);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Source+Code+Pro);
 
 /*
 
@@ -57,7 +57,7 @@ hover #6c6c6c
 
 
 body {
-  padding-top: 70px;
+  padding-top: 50px;
   font-family: 'Source Sans Pro', sans-serif;
   color: #434343;
 }
@@ -78,6 +78,13 @@ h6,
   font-weight: 400;
   line-height: 1.1;
   color: inherit;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: 'Source Code Pro', monospace;
 }
 
 
@@ -101,7 +108,7 @@ h6,
 }
 
 .nav > li.first {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .nav > li.active {
@@ -140,6 +147,8 @@ h6,
 
 #intro-text {
   padding: 12px;
+  font-family: 'Source Code Pro', monospace;
+  
 }
 
 /* 

@@ -11,14 +11,16 @@ title: Hello!
     </article>
 </div>
 
-<div id="introduction" class="row col-md-12">
-    <div class="accentContainer">
-        <!-- style="margin-left: -1px; overflow-y: auto;" -->
-        <img id="intro-portrait" class="pull-left img-responsive" alt="Ronald Zarits" src="assets/img/zarits_face.jpg" />
-        <p id="intro-text">
-            &gt;_ I'm Ronald Zarīts, a software developer, design enthusiast and aspiring drummer. `<br />
-            I live in Riga, Latvia and work at Scope Technologies. Processing Infinity is my internet home.
-        </p>    
+<div id="introduction" class="row">
+    <div class="col-md-12">
+        <div class="accentContainer">
+            <!-- style="margin-left: -1px; overflow-y: auto;" -->
+            <img id="intro-portrait" class="pull-left img-responsive media-object" alt="photo of Ronald Zarits" src="assets/img/zarits_face.jpg" />
+            <p id="intro-text">
+                &gt;_ I'm Ronald Zarīts, a software developer, design enthusiast and aspiring drummer. `<br />
+                I live in Riga, Latvia and work at Scope Technologies. Processing Infinity is my internet home.
+            </p>    
+        </div>
     </div>
 </div>
 
@@ -29,7 +31,7 @@ title: Hello!
             <div>
                 <article>
                     <header>
-                        <h1>Also, find me on</h1>
+                        <h4>Also, find me on</h4>
                     </header>
                     <ul>
                         <li><a href="http://www.linkedin.com/pub/ronalds-zarīts/19/a9/98b">LinkedIn</a></li>
@@ -46,7 +48,7 @@ title: Hello!
             <div>
                 <article>
                     <header>
-                        <h1>Recent Posts</h1>
+                        <h4>Recent Posts</h4>
                     </header>
                     <ul class="posts">
                         {% for post in site.posts %}
@@ -64,7 +66,7 @@ title: Hello!
             <div>
                 <article>
                     <header>
-                        <h1>Recent Tweets</h1>
+                        <h4>Recent Tweets</h4>
                     </header>
                     <p>
                         <a class="twitter-timeline" data-chrome="noheader" data-dnt="true" href="https://twitter.com/rn1d" data-widget-id="409747760510816257">Tweets by @rn1d</a>
