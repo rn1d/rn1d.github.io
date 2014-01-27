@@ -25,68 +25,64 @@ title: Hello!
 </div>
 
 <div id="tripel-container" class="row">
-    <div id="layout-tripel">
-
-        <div id="tripel-first" class="col-md-4">
-            <div>
-                <article>
-                    <header>
-                        <h4>Also, find me on</h4>
-                    </header>
-                    <ul>
-                        <li><a href="http://www.linkedin.com/pub/ronalds-zarīts/19/a9/98b">LinkedIn</a></li>
-                        <li><a href="http://stackoverflow.com/users/88522/ronald-zarts">StackOverflow</a></li>
-                        <li><a href="http://serverfault.com/users/128293/ronald-zarts">ServerFault</a></li>
-                        <li><a href="https://www.codeplex.com/site/users/view/rona1ds">Codeplex</a></li>
-                        <li><a href="https://twitter.com/rn1d">Twitter</a></li>
-                    </ul>
-                </article>
-            </div>
+    <div class="col-md-4">
+        <div>
+            <article>
+                <header>
+                    <h4>Recent Tweets</h4>
+                </header>
+                <p>
+                    <a class="twitter-timeline" data-chrome="noheader" data-dnt="true" href="https://twitter.com/rn1d" data-widget-id="409747760510816257">Tweets by @rn1d</a>
+                </p>
+                <script type="text/javascript">
+                    // <![CDATA[
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                    // ]]>
+                </script>
+                <p style="text-align: right;">
+                    <a href="https://twitter.com/rn1d" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @rn1d</a>
+                </p>
+                <script type="text/javascript">
+                    // <![CDATA[
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                    // ]]>
+                </script>
+            </article>
         </div>
+    </div>
 
-        <div id="tripel-second" class="col-md-4">
-            <div>
-                <article>
-                    <header>
-                        <h4>Recent Posts</h4>
-                    </header>
-                    <ul class="posts">
-                        {% for post in site.posts %}
-                            <li>
-                            <a href="{{ post.url }}">{{ post.title }}</a>
-                            <span class="metadata">{{ post.date | date_to_string }}</span>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </article>
-            </div>
+    <div class="col-md-4">
+        <div>
+            <article>
+                <header>
+                    <h4>Recent Posts</h4>
+                </header>
+                <ul class="posts">
+                    {% for post in site.posts %}
+                        <li>
+                        <a href="{{ post.url }}">{{ post.title }}</a>
+                        <span class="metadata">{{ post.date | date_to_string }}</span>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </article>
         </div>
+    </div>
 
-        <div id="tripel-third" class="col-md-4">
-            <div>
-                <article>
-                    <header>
-                        <h4>Recent Tweets</h4>
-                    </header>
-                    <p>
-                        <a class="twitter-timeline" data-chrome="noheader" data-dnt="true" href="https://twitter.com/rn1d" data-widget-id="409747760510816257">Tweets by @rn1d</a>
-                    </p>
-                    <script type="text/javascript">
-                        // <![CDATA[
-                        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-                        // ]]>
-                    </script>
-                    <p style="text-align: right;">
-                        <a href="https://twitter.com/rn1d" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @rn1d</a>
-                    </p>
-                    <script type="text/javascript">
-                        // <![CDATA[
-                        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-                        // ]]>
-                    </script>
-                </article>
-            </div>
+    <div class="col-md-4">
+        <div>
+            <article>
+                <header>
+                    <h4>Also, find me on</h4>
+                </header>
+                <ul>
+                    <li><a href="http://www.linkedin.com/pub/ronalds-zarīts/19/a9/98b">LinkedIn</a></li>
+                    <li><a href="http://stackoverflow.com/users/88522/ronald-zarts">StackOverflow</a></li>
+                    <li><a href="http://serverfault.com/users/128293/ronald-zarts">ServerFault</a></li>
+                    <li><a href="https://www.codeplex.com/site/users/view/rona1ds">Codeplex</a></li>
+                    <li><a href="https://twitter.com/rn1d">Twitter</a></li>
+                </ul>
+            </article>
         </div>
-
     </div>
 </div>
