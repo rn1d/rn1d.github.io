@@ -29,18 +29,18 @@ title: Hello!
 </div>
 
 <div id="tripel-container" class="row">
-    <div class="col-md-4">
+    <div class="col-md-5">
         <div>
             <article>
                 <header>
                     <h4>Recent Posts</h4>
                 </header>
-                <ul class="posts">
+                <ul class="itemList">
                     {% for post in site.posts %}
-                        <li>
+                    <li>
                         <a href="{{ post.url }}">{{ post.title }}</a>
-                        <span class="metadata">{{ post.date | date_to_string }}</span>
-                        </li>
+                        <small><p class="metadata">{{ post.date | date: "%A, %B %-d, %Y" }}</p></small>
+                    </li>
                     {% endfor %}
                 </ul>
             </article>
@@ -74,13 +74,13 @@ title: Hello!
     </div>
 
 
-    <div class="col-md-4">
+    <div class="col-md-3">
         <div>
             <article>
                 <header>
                     <h4>Also, find me on</h4>
                 </header>
-                <ul>
+                <ul class="itemList">
                     <li><a href="http://www.linkedin.com/pub/ronalds-zarīts/19/a9/98b">LinkedIn</a></li>
                     <li><a href="http://stackoverflow.com/users/88522/ronald-zarts">StackOverflow</a></li>
                     <li><a href="http://serverfault.com/users/128293/ronald-zarts">ServerFault</a></li>
