@@ -38,7 +38,7 @@ a:visited { color: #a0a; }
 /*
 /*****************************************************************************/
 
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Source+Code+Pro);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Source+Code+Pro);
 
 /*
 
@@ -59,7 +59,9 @@ hover #6c6c6c
 body {
   padding-top: 58px;
   font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
   color: #434343;
+
 }
 
 h1,
@@ -108,7 +110,7 @@ samp {
 }
 
 .nav > li.first {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .nav > li.active {
@@ -135,31 +137,48 @@ samp {
 
 .accentContainer {
   background-color: #ebebeb;
-  color: #454545;
-  border-left: 6px solid #454545;
-  font-size: 18px;
+  font-size: 16px;
   overflow: auto;
+  display: table;
+  width: 100%;
+  margin-bottom: 25px;
 }
 
 #intro-portrait {
-  padding-right: 12px;
+  /*border-top: 6px solid #454545;
+  border-left: 6px solid #454545;*/
+  width: 96px;
+  float: left;
 }
 
 #intro-text {
-  padding: 12px;
+  padding: 12px 12px 0px 12px;
+  margin-left: 96px;
   font-family: 'Source Code Pro', monospace;
-  
+  color: #454545;
+  background-color: #ebebeb;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 @media(max-width:767px){
+  #greeting {
+    margin-top: 15px;
+    margin-bottom: 12px;
+  }
+
   #greetings {
     font-size: 26px;
   }
-
 }
 @media(min-width:768px){
-    #greetings span {
-      font-size: 48px;
+  #greetings span {
+    font-size: 48px;
+  }
+
+  #greeting {
+    margin-top: 25px;
+    margin-bottom: 30px;
   }
 }
 @media(min-width:992px){
@@ -173,12 +192,8 @@ samp {
   #greetings span {
       font-size: 72px;
   }
-}
 
-/* ProcInf specific */
-#greeting {
-  margin-top: 25px;
-  margin-bottom: 25px;
+
 }
 
 #greetings span {
