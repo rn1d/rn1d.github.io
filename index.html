@@ -39,7 +39,7 @@ title: Hello!
                     {% for post in site.posts %}
                     <li>
                         <a href="{{ post.url }}">{{ post.title }}</a>
-                        <small><p class="metadata">{{ post.date | date: "%A, %B %-d, %Y" }}</p></small>
+                        <small><p class="metadata">{{ post.date | date: "%a, %b %-d, %y" }}</p></small>
                     </li>
                     {% endfor %}
                 </ul>
