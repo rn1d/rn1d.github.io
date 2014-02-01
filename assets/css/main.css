@@ -245,6 +245,18 @@ samp {
     color: #b24c4c;
 }
 
+@media(max-width:479px){
+  .navbar-nav .active,
+  .navbar-nav .hidden-collapsed {
+    display: none !important;
+  }
+
+  .navbar-nav li {
+    margin-left: 9px;
+  }
+}
+
+
 @media(max-width:767px){}
 @media(min-width:768px){}
 @media(min-width:992px){}
