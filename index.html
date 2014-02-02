@@ -28,14 +28,14 @@ title: Processing Infinity
 </div>
 
 <div id="tripel-container" class="row">
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-6">
         <div>
             <article>
                 <header>
                     <h4>Recent Posts</h4>
                 </header>
                 <ul class="itemList">
-                    {% for post in site.posts limit:4 %}
+                    {% for post in site.posts limit:3 %}
                     <li>
                         <a href="{{ post.url }}">{{ post.title }}</a>
                         <small><p class="metadata">{{ post.date | date: "%a, %b %-d, %y" }}</p></small>
@@ -47,7 +47,7 @@ title: Processing Infinity
         </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-6">
         <div>
             <article>
                 <header>
@@ -73,7 +73,7 @@ title: Processing Infinity
         </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-6">
         <div>
             <article>
                 <header>
