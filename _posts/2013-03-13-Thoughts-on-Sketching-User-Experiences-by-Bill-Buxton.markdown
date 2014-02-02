@@ -24,5 +24,5 @@ For those interested in Bill's work, here's a video of him going over some mater
 
 [Sketching and Experience Design, Lecture at Standford University][2]
 
-  [1]: /Media/Default/BlogPost/book-cover.PNG
+  [1]: /assets/img/b/book-cover.PNG
   [2]: http://www.youtube.com/watch?v=xx1WveKV7aE

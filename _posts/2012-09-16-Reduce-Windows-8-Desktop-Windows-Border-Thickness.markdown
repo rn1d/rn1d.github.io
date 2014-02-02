@@ -31,5 +31,5 @@ Additional resources:
 1. Forum posting where I originally found the instructions on changing the window chrome thickness. [[link]](http://www.eightforums.com/tutorials/8463-border-width-windows-change-windows-8-a.html)
 2. Another article on changing window border thickness [[link]](http://www.thewindowsclub.com/change-desktop-windows-metrics-border-width-windows-8)
 
-  [1]: /Media/Default/BlogPost/reg-settings.png
-  [2]: /Media/Default/BlogPost/ab.png
+  [1]: /assets/img/b/reg-settings.png
+  [2]: /assets/img/b/BlogPost/ab.png
