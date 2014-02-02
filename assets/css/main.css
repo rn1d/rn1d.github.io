@@ -256,6 +256,32 @@ samp {
   }
 }
 
+/*
+  Posts
+*/
+
+.post-list > header {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  text-align: right;
+  font-size: smaller;
+}
+
+.post-list article {
+  border-top: #dbdbdb solid 1px;
+  padding-top: 20px;
+  padding-bottom: 8px;
+}
+
+.post-list article header {
+  margin-bottom: 6px;
+}
+
+.post-list h1 {
+  font-size: larger;
+  margin-bottom: 0;
+  margin-top: 0;
+}
 
 @media(max-width:767px){}
 @media(min-width:768px){}
