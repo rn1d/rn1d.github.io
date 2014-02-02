@@ -265,6 +265,11 @@ samp {
   color: #434343;
 }
 
+.post-list .post-metadata, .post-metadata a {
+  color: lightgray;
+  margin-left: 12px;
+}
+
 .post {
   max-width: 768px;
 }

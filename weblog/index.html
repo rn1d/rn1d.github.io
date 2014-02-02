@@ -12,12 +12,25 @@ title: Weblog
 			<article>
 			  <header>
 			    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-			    <span class="metadata"><time pubdate="pubdate" datetime="{{ post.date | date: "%F" }}">{{ post.date | date: "%A, %b %-d, %Y"  }}</time></span>
+			    <span class="metadata">
+			    	<time pubdate="pubdate" datetime="{{ post.date | date: "%F" }}">{{ post.date | date: "%A, %b %-d, %Y"  }}</time>
+		    	</span>
+		    	<span class="post-metadata"> | </span>
+		    	<a class="comment-count post-metadata" href="{{ post.url }}/index.html#disqus_thread">Comments</a>
 			  </header>
 			  {{ post.excerpt }}
 			</article>
 	    </li>
 	{% endfor %}
 	</ul>
-
 </div>
+<script type="text/javascript">
+	var disqus_shortname = 'procinf';
+
+	(function () {
+	    var s = document.createElement('script'); s.async = true;
+	    s.type = 'text/javascript';
+	    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+	    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+	}());
+</script>
