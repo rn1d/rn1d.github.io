@@ -265,7 +265,7 @@ samp {
   color: #434343;
 }
 
-.post-list .post-metadata, .post-metadata a {
+.post-list .post-metadata {
   color: lightgray;
   margin-left: 12px;
 }
