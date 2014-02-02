@@ -3,6 +3,7 @@ layout: post
 title:  "Sublime Text - My New Plain Text Editor of Choice"
 date:   2012-09-10 23:15:00
 categories: tools
+excerpt: I'm quite obsessive about my tools - I like to use the very best tools for the job. One of the tools I find absolutely essential, is a good plain text editor, so every time I set up a new work environment, a plain text editor is one of the first things I install.
 ---
 I'm quite obsessive about my tools - I like to use the very best tools for the job. One of the tools I find absolutely essential, is a good plain text editor, so every time I set up a new work environment, a plain text editor is one of the first things I install. I've tried to minimize the number of apps that I need to install on a fresh system and use my IDEs for text file editing, but I find it problematic - Visual Studio and Eclipse do have good basic text editing features, but the sometimes sluggish performance can be annoying. There's nothing like a minimal, blazing fast editor. But on the other hand, I simply cannot understand people that like plain Notepad - it's cumbersome, offers practically no help on navigating your file, search is rudimentary, keyboard shortcuts are limited, and it's cumbersome to do indenting. In short, it feels like you have to fight it to get it to do what you want. 
 

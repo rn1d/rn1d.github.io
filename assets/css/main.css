@@ -1,58 +1,25 @@
-/*****************************************************************************/
-/*
-/* Common
-/*
-/*****************************************************************************/
-
-/* Global Reset 
-included in boostrap 
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html, body { height: 100%; }
-
-body {
-  background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
-  text-align: center;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
-
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
-
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
-*/
-
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
 
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Source+Code+Pro);
 
 /*
-
-fonts:
+fonts
   font-family: 'Source Sans Pro', sans-serif;
   font-family: 'Source Code Pro', sans-serif;
 
-background: 
+background
   background-color: #ebebeb;
 
 navbar
   #00ccff (border-bottom: 3px solid #00ccff;)
 
-hover #6c6c6c
+hover 
+  #6c6c6c
+
+bootstrap breakpoints
+  @media(max-width:767px){}
+  @media(min-width:768px){}
+  @media(min-width:992px){}
+  @media(min-width:1200px){}
 */
 
 
@@ -61,7 +28,6 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   color: #434343;
-
 }
 
 h1,
@@ -89,6 +55,17 @@ samp {
   font-family: 'Source Code Pro', monospace;
 }
 
+.itemList {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0; 
+}
+
+.metadata {
+  color: #999999;
+  font-size: 0.846em;
+  margin: 0 0 12px;
+}
 
 /* 
     Navigation
@@ -131,16 +108,8 @@ samp {
   background-color: inherit;
 }
 
-.itemList {
-  list-style-type: none;
-  padding-left: 0;
-  margin-left: 0; 
-}
-
-.metadata {
-  color: #999999;
-  font-size: 0.846em;
-  margin: 0 0 12px;
+.nav-title-collapsed {
+  max-width: 80%
 }
 
 /*
@@ -157,8 +126,6 @@ samp {
 }
 
 #intro-portrait {
-  /*border-top: 6px solid #454545;
-  border-left: 6px solid #454545;*/
   width: 96px;
   float: left;
 }
@@ -178,11 +145,11 @@ samp {
     margin-top: 15px;
     margin-bottom: 12px;
   }
-
   #greetings {
     font-size: 26px;
   }
 }
+
 @media(min-width:768px){
   #greetings span {
     font-size: 48px;
@@ -193,19 +160,27 @@ samp {
     margin-bottom: 30px;
   }
 }
-@media(min-width:992px){
 
+@media(min-width:992px){
   #greetings span {
       font-size: 62px;
   }
-
 }
+
 @media(min-width:1200px){
   #greetings span {
       font-size: 72px;
   }
+}
 
+#greetings {
+  width: 100%;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
 
+#greetings:hover {
+  background-color: #e2e6d6;
 }
 
 #greetings span {
@@ -220,7 +195,6 @@ samp {
 
 #greetings .code:hover{
     color: #000000;
-    background-color: #e2e6d6;
 }
 
 #greetings .codeliteral {
@@ -260,6 +234,10 @@ samp {
   Posts
 */
 
+.post-list {
+  max-width: 992px;
+}
+
 .post-list > header {
   margin-top: 6px;
   margin-bottom: 6px;
@@ -268,7 +246,7 @@ samp {
 }
 
 .post-list article {
-  border-top: #dbdbdb solid 1px;
+  border-top: #f0f0f0 solid 1px;
   padding-top: 20px;
   padding-bottom: 8px;
 }
@@ -283,146 +261,10 @@ samp {
   margin-top: 0;
 }
 
-@media(max-width:767px){}
-@media(min-width:768px){}
-@media(min-width:992px){}
-@media(min-width:1200px){}
-
-/* 
-    background-color:#ebebeb;
-    background-color:rgba(235, 235, 235, 0.97);
-    */
-
-/*
-.posts {
-  list-style-type: none;
-  margin-bottom: 2em;
+.post-list h1 a {
+  color: #434343;
 }
 
-.posts li {
-  line-height: 1.75em;
+.post {
+  max-width: 768px;
 }
-
-.posts span {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
-}
-*/
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
-
-/*
-.site {
-  font-size: 115%;
-  text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
-}
-
-.header a {
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.title {
-  display: inline-block;
-  margin-bottom: 2em;
-}
-
-.title a {
-  color: #a00;
-}
-
-.title a:hover {
-  color: #000;
-}
-
-.header a.extra {
-  color: #aaa;
-  margin-left: 1em;
-}
-
-.header a.extra:hover {
-  color: #000;
-}
-
-.meta {
-  color: #aaa;
-}
-
-.footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
-  margin-top: 2em;
-  overflow: hidden;
-}
-
-.footer .contact {
-  float: left;
-  margin-right: 3em;
-}
-
-.footer .contact a {
-  color: #8085C1;
-}
-
-.footer .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right;
-}
-
-.footer .rss img {
-  border: 0;
-}
-*/
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
-
-/* standard 
-
-
-.post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
-}
-
-.post ul, .post ol {
-  margin-left: 1.35em;
-}
-
-.post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em;
-}
-
-.post pre code {
-  border: none;
-}
-*/
-
-/* terminal 
-.post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
-}
-
-.post pre.terminal code {
-  background-color: #333;
-}
-
-*/
-
-

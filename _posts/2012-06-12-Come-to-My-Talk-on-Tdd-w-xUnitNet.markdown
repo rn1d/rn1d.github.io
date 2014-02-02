@@ -3,6 +3,7 @@ layout: post
 title:  "Come to my talk on TDD with xUnit.net"
 date:   2012-06-12 12:30:00
 categories: events
+excerpt: I will be presenting at the .NET User Group of Latvia on the topics of unit testing, test driven development and the xUnit.net unit testing framework. 
 ---
 I will be presenting at the .NET User Group of Latvia on the topics of unit testing, test driven development and the xUnit.net unit testing framework. Details on the event can be found at the [User Group homepage][1], and on the Latvian Developers Network [LinkedIn page][2].
 
