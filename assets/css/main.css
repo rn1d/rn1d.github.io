@@ -67,6 +67,18 @@ samp {
   margin: 0 0 12px;
 }
 
+.truncate {
+  width: 76%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.navbar-header {
+  overflow: hidden;
+  max-height: 58px;
+}
+
 /* 
     Navigation
 */
@@ -147,6 +159,16 @@ samp {
   }
   #greetings {
     font-size: 26px;
+  }
+}
+
+#greeting-concat {
+  display:inline;
+}
+
+@media(min-width:420px){
+  #greeting-concat {
+    display:none;
   }
 }
 
