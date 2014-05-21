@@ -39,29 +39,37 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "_layouts/default.html",
-			"settings":
-			{
-				"buffer_size": 2168,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "weblog/index.html",
-			"settings":
-			{
-				"buffer_size": 1082,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/User/Open in Safari.sublime-build",
 	"command_palette":
 	{
-		"height": 67.0,
+		"height": 47.0,
 		"selected_items":
 		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"markdown",
+				"Set Syntax: Markdown GFM"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"jeky",
+				"Set Syntax: HTML (Jekyll)"
+			],
 			[
 				"rename",
 				"Emmet: Rename Tag"
@@ -73,14 +81,6 @@
 			[
 				"tag",
 				"Emmet: Rename Tag"
-			],
-			[
-				"jeky",
-				"Set Syntax: HTML (Jekyll)"
-			],
-			[
-				"disable",
-				"Package Control: Disable Package"
 			],
 			[
 				"enable ",
@@ -97,10 +97,6 @@
 			[
 				"css",
 				"Set Syntax: CSS"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"insta",
@@ -129,13 +125,9 @@
 			[
 				"reind",
 				"Indentation: Reindent Lines"
-			],
-			[
-				"package",
-				"Package Control: Install Package"
 			]
 		],
-		"width": 575.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -157,31 +149,38 @@
 	},
 	"file_history":
 	[
+		"/Users/ronalds/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/ronalds/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/ronalds/Library/Application Support/Sublime Text 3/Packages/User/Markdown.sublime-settings",
+		"/Users/ronalds/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/Markdown.sublime-settings",
 		"/Users/ronalds/Projects/ProcInf/assets/css/main.css",
 		"/Users/ronalds/Projects/ProcInf/index.html",
+		"/Users/ronalds/Projects/ProcInf/weblog/index.html",
+		"/Users/ronalds/Projects/ProcInf/_layouts/default.html",
+		"/Users/ronalds/Projects/ProcInf/_site/assets/css/main.css",
+		"/Users/ronalds/Projects/ProcInf/_site/weblog/2013/06/16/Making-BeatKeeper/index.html",
+		"/Users/ronalds/Projects/ProcInf/_posts/2012-06-12-Come-to-My-Talk-on-Tdd-w-xUnitNet.markdown",
+		"/Users/ronalds/Projects/ProcInf/_config.yml",
 		"/Users/ronalds/Projects/ProcInf/_layouts/post.html",
+		"/Users/ronalds/Dropbox/Documents/app_offline.htm",
+		"/Users/ronalds/Projects/ProcInf/atom.xml",
+		"/Users/ronalds/Projects/ProcInf/_site/feed.xml",
 		"/Users/ronalds/Projects/ProcInf/about/index.html",
 		"/Users/ronalds/Projects/ProcInf/_posts/2012-09-10-Sublime-Text-My-New-Editor-of-Choice.markdown",
-		"/Users/ronalds/Projects/ProcInf/_posts/2012-06-12-Come-to-My-Talk-on-Tdd-w-xUnitNet.markdown",
 		"/Users/ronalds/Projects/ProcInf/_posts/2012-05-26-Restart.markdown",
 		"/Users/ronalds/Projects/ProcInf/assets/fonts/glyphicons-halflings-regular.svg",
 		"/Users/ronalds/Projects/ProcInf/_posts/2012-09-16-Reduce-Windows-8-Desktop-Windows-Border-Thickness.markdown",
 		"/Users/ronalds/Projects/ProcInf/_posts/2013-03-13-Thoughts-on-Sketching-User-Experiences-by-Bill-Buxton.markdown",
-		"/Users/ronalds/Projects/ProcInf/weblog/index.html",
 		"/Users/ronalds/Projects/procinf-site.css",
 		"/Users/ronalds/Projects/ProcInf/assets/css/bootstrap.css",
-		"/Users/ronalds/Projects/ProcInf/_config.yml",
-		"/Users/ronalds/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/ronalds/Projects/ProcInfHtml/index.html",
 		"/Users/ronalds/Projects/ProcInf/_posts/2013-06-16-Making-BeatKeeper.markdown",
 		"/Users/ronalds/Projects/ProcInf/_posts/2014-01-17-welcome-to-jekyll.markdown",
-		"/Users/ronalds/Projects/ProcInf/_layouts/default.html",
 		"/Users/ronalds/Library/Application Support/Sublime Text 3/Packages/User/Open in Safari.sublime-build",
 		"/Users/ronalds/ProcInf/_config.yml",
 		"/Users/ronalds/ProcInf/index.html",
 		"/Users/ronalds/ProcInf/_posts/2014-01-17-welcome-to-jekyll.markdown",
 		"/Users/ronalds/Dropbox/Documents/Hotel-letter.md",
-		"/Users/ronalds/Dropbox/Documents/app_offline.htm",
 		"/Volumes/C/Users/Ronalds/Projects/ProcInf/build/MsDeploy/Orchard/Web.config"
 	],
 	"find":
@@ -200,6 +199,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"theme",
+			"trunca",
+			"{{ site.url }}",
+			"{{ site.name }}",
 			"}\n",
 			" .",
 			"DIVIDER",
@@ -222,6 +225,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"http://www.processinginfinity.com",
+			"Processing Infinity"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -232,68 +237,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "_layouts/default.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2168,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								857,
-								857
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jekyll/Syntaxes/HTML (Jekyll).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "weblog/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1082,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								227,
-								227
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jekyll/Syntaxes/HTML (Jekyll).tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -339,7 +284,7 @@
 	"project": "ProcInf.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -347,6 +292,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"webindex",
+				"weblog/index.html"
+			]
 		],
 		"width": 0.0
 	},
@@ -355,6 +304,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"",
+				"~/Projects/ProcInf/ProcInf.sublime-project"
+			]
 		],
 		"width": 380.0
 	},
