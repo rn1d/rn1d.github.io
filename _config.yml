@@ -1,6 +1,6 @@
 name: Processing Infinity
 markdown: redcarpet
-pygments: true
+highlighter: true
 timezone: Europe/Riga
 encoding: UTF-8
 permalink: /weblog/:year/:month/:day/:title
