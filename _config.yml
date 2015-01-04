@@ -4,4 +4,4 @@ timezone: Europe/Riga
 encoding: UTF-8
 permalink: /weblog/:year/:month/:day/:title
 url: http://www.processinginfinity.com
-exclude: [ ProcInf.sublime-* ]
+exclude: [ ProcInf.sublime-*, Gemfile, Gemfile.lock ]
