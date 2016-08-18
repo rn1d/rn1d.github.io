@@ -34,36 +34,39 @@ Typical use cases are described below. Implementation notes and full code of the
 ### Publishing messages
 
 1. Create a class for the message. For instance:
-```
+{% highlight typescript %}
 export class UserUpdatedMessage {
     constructor(public user: User){ }
 }
-```
+{% endhighlight %}
+
 The class defines the structure of the message - it can be anything - whatever the publisher needs to communicate or whatever the subscribers need to do their job. In the case of User entity updates, the entire updated object is passed in the message.
 
 2. Call `MessagingService.publish()` and provide the message instance as the parameter.
-```
+
+{% highlight typescript %}
 this.messaging.publish(new UserUpdatedMessage(updatedUser));
-```
+{% endhighlight %}
 
 Usually, the service instance (`this.messaging` in the example above) should be injected by Angular's dependency injection facilities.
 
 ### Subscribing to messages
 
 1. Obtain an `Observable` instance of published messages by calling `messagingService.of()` and passing in the message type. Subscribe to the observable and save a reference to the subscription, for instance.
-```
+
+{% highlight typescript %}
 this.userUpdatedSubscription = this.messaging.of(UserUpdatedMessage).subscribe(message => {
     this.user = message.user;
 })); 
-```
+{% endhighlight %}
 
 2. Clean up. If the component is destroyed, the subscriptions should be disposed of in the `ngOnDestroy` method.
 
-```
+{% highlight typescript %}
 ngOnDestroy() {
     this.userUpdatedSubscription.unsubscribe();    
 }
-```
+{% endhighlight %}
 
 The application may leak memory and unwanted side effects may occur, if the `Subscription` is not disposed when the component is destroyed,  
 
@@ -73,8 +76,9 @@ Since Angular 2 uses [rxjs](https://github.com/ReactiveX/rxjs) it was an obvious
 
 Internally the messages are wrapped in a Message object and the filtering is done based on the provided type name. Using the message type as the channel avoids the use of untyped strings or additional enums for message filtering, and allows tools to provide code suggestions/intellisense for subscription callbacks. 
 
-Full code:
-```
+Code for the `MessagingService`:
+
+{% highlight typescript %}
 import { Injectable } from "@angular/core";
 import { Observable, Subject } from "rxjs/Rx";
 
@@ -101,7 +105,6 @@ export class MessagingService {
         return this.message$.filter(m => m.channel === channel).map(m => m.data);
     }
 }
-```
-
+{% endhighlight %}
 
 Comments are welcome. 
