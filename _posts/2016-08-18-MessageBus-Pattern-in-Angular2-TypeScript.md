@@ -10,6 +10,8 @@ The project I am currently working on required a mechanism how unrelated compone
 
 We wrote a simple implementation of this pattern for Angular 2 named `MessagingService`.  
 
+**UPDATE 1:** The implementation suggested below breaks with mangling. It's not a problem if you aren't planning to mangle, but you probably would want to at some point. This implmentation requires more thought. Caveat emptor.
+
 ## The pattern
 
 The Message Bus (also called Event Bus) is a [publish / subscribe pattern](https://en.wikipedia.org/wiki/Publish–subscribe_pattern). It involves a central service, the Message Bus, to which messages are *published*, and interested parties can use the Message Bus to *subscribe* to be notified of published messages. This allows different parts of the application to communicate without having direct knowledge of each other.
