@@ -10,7 +10,7 @@ The project I am currently working on required a mechanism how unrelated compone
 
 We wrote a simple implementation of this pattern for Angular 2 named `MessagingService`.  
 
-**UPDATE 1:** The implementation suggested below breaks with mangling. It's not a problem if you aren't planning to mangle, but you probably would want to at some point. This implmentation requires more thought. Caveat emptor.
+**UPDATE 1:** The implementation suggested below breaks with mangling. It's not a problem if you aren't planning to mangle, but you probably would want to at some point. This implementation requires more thought. Caveat emptor.
 
 ## The pattern
 
